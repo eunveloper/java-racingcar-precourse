@@ -8,14 +8,11 @@ public class Car {
 
     private String name;
 
-    public Car(String name) {
+    public void initCarName(String name) {
         if (name.length() > NAME_MAX_LENGTH) {
             throw new IllegalArgumentException(CAR_NAME_NOT_MORE_THAN_5);
         }
         this.name = name;
     }
 
-    public boolean isSameNameCar(String name) {
-        return this.name.equals(name);
-    }
 }

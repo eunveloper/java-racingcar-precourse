@@ -2,20 +2,24 @@ package racingcar.model;
 
 import racingcar.view.RacingArgument;
 
-import java.util.List;
-
 public class Racing {
 
     private final RacingArgument racingArgument = new RacingArgument();
 
-    private List<Car> racingCars;
+    private RacingCars racingCars;
+    private RoundNumber roundNumber;
 
     public void startGame() {
-        initRacingCars();
+        initRacingCars(racingArgument.initRacingCars());
+        initRacingRoundNumber(racingArgument.initRacingRoundNumber());
     }
 
-    private void initRacingCars() {
-        this.racingCars = racingArgument.initRacingCars();
+    private void initRacingCars(RacingCars racingCars) {
+        this.racingCars = racingCars;
+    }
+
+    public void initRacingRoundNumber(RoundNumber roundNumber) {
+        this.roundNumber = roundNumber;
     }
 
 }
