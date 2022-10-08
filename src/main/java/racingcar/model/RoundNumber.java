@@ -16,4 +16,8 @@ public class RoundNumber {
     private boolean isNumberic(String roundNumber) {
         return roundNumber != null && roundNumber.matches("[-+]?\\d*\\.?\\d+");
     }
+
+    public int getRoundNumber() {
+        return number;
+    }
 }

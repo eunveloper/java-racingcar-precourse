@@ -9,4 +9,8 @@ public class RacingCars {
     public void initRacingCars(List<Car> cars) {
         this.cars = cars;
     }
+
+    public List<Car> getRacingCars() {
+        return cars;
+    }
 }

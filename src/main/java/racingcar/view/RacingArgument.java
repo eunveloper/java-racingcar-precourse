@@ -64,6 +64,7 @@ public class RacingArgument {
     private Car generatorEachRacingCar(String carName) {
         Car car = new Car();
         car.initCarName(carName);
+        car.initAdvanceCount();
         return car;
     }
 
