@@ -2,7 +2,7 @@ package racingcar.model;
 
 public class AdvanceCount {
 
-    private int count;
+    private int count = 0;
 
     public void addedCount() {
         this.count += 1;

@@ -35,8 +35,9 @@ public class Racing {
         racingProgress.executionResult();
         for (int i = 1; i <= roundNumber.getRoundNumber(); i++) {
             startRacingEachRacingCars();
-            racingProgress.racingResult(this.racingCars);
+            racingProgress.racingResult(racingCars);
         }
+        racingProgress.allRacingResult(racingCars);
     }
 
     private void startRacingEachRacingCars() {
